@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="loading"></div>
+
+    <div id="ansStartButton">
+        <h2>プロ野球クイズ</h2>
+        <h3>プロ野球に関するごく簡単なクイズです。<br>
+        みんなもやってみよう！</h3>
+        <button onclick="ansStart()" id="Startbutton">問題を解く</button>
+    </div>
+
+    <div id="ansArea">
+        <!-- 問題文 -->
+        <h2 id="question"></h2>
+        <!-- 選択肢 -->
+        <!-- <div class="answer">
+            <p id="ans1"></p>
+            <p id="ans2"></p>
+            <p id="ans3"></p>
+        </div> -->
+        <!-- 解答ボタン -->
+        <button onclick="ansButton(1)" id="ansButton1">1</button>
+        <button onclick="ansButton(2)" id="ansButton2">2</button>
+        <button onclick="ansButton(3)" id="ansButton3">3</button>
+
+        <!-- 正答数 -->
+        <!-- <p id="answer"></p> -->
+        <!-- タイマー -->
+        <p id="countDown"></p>
+    </div>
+
+    <!-- 正答数 -->
+    <p id="answer"></p>
+
+    <img src="ESCON.jpg">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

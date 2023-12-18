@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background: #68be8d;
+    text-align: center;
+}
+
+button {
+    font-family: inherit;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background: #68be8d;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+}
+
+#ansStartButton {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 60px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.answer p {
+    line-height: 2.5;
+}
+
+#ansStartButton button {
+    margin: 48px;
+    padding: 20px 40px;
+}
+
+#ansStartButton h2 {
+    white-space: nowrap;
+}
+
+#ansArea {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin: 0 auto; */
+    width: 80%;
+}
+
+#ansArea button {
+    width: 40%;
+    padding: 20px;
+    margin: 24px auto;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:#68be8d;
+}
+
+img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
