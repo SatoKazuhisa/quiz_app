@@ -92,6 +92,7 @@ const ansStart = () => {
     // 問題を解くボタンを消す
     successFlag = false;
     document.getElementById("ansStartButton").style.display = "none";
+    document.getElementById("img").style.display = "none";
     document.getElementById("answer").style.display = "none";
     // 問題文と選択肢を表示
     document.getElementById("ansArea").style.display = "inline-flex";
